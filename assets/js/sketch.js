@@ -1,7 +1,7 @@
 myData = `The quick brown fox jumps over the lazy dog`;
 let img,
   myFont = [];
-myFonts = 7;
+myFonts = 14;
 imgNum = 1;
 fontNum = 0;
 pageNum = 1;
@@ -50,7 +50,7 @@ function changeFont()
   fontNum %= myFonts;
 }
 
-function loadPage() 
+function loadPage()
 {
   img = loadImage("assets/images/default_page.jpg");
 }
