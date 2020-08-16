@@ -9,7 +9,10 @@ window.onload = function () {
     var reader = new FileReader();
     reader.readAsDataURL(fileupload.files[0]);
     reader.onload = function (e) {
-      img = loadImage(e.target.result);
+      myPage.push(loadImage(e.target.result));
+      myPages +=1;
+      pageNum = myPages - 1;
+      // img = loadImage(e.target.result);
     };
   };
 
