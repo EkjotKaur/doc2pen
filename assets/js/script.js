@@ -68,3 +68,18 @@ $("#dataField").on("keydown", function (e) {// function event
     if (e.which !== 8) e.preventDefault();//prevent user to enter more text
   }
 });
+
+
+
+// Or with jQuery
+
+// $(document).ready(function(){
+//   $('.modal').modal();
+//   $('.dropdown-trigger').dropdown();
+// });
+var dropdowns = document.querySelectorAll('.dropdown-trigger')
+for (var i = 0; i < dropdowns.length; i++){
+    M.Dropdown.init(dropdowns[i]);
+}
+
+$('.dropdown-trigger').dropdown();

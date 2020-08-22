@@ -841,3 +841,20 @@ align-self: center;
 .editor-button button:hover span{
 	color:#fff;
 }
+
+.row .col .btn{
+	word-wrap: break-word; 
+	white-space: normal;
+	overflow-wrap: break-word;
+}
+.edit-pages .col.m3{
+	width: 18%;
+	padding: 0;
+	font-size: 0.7rem;
+}
+.edit-pages .col.m3 a{
+	margin: 10px;
+}
+.edit-pages .col .btn{
+	font-size: 0.8rem !important;
+}

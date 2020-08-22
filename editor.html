@@ -38,6 +38,8 @@
     	<!--Icons-->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"> </script>   
+
     	<!-- Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142979168-1"></script>
 		<script>
@@ -94,16 +96,59 @@
 					onclick="">
 				<input class="button-primary button-large download-image hidden" type="file" id="fontUploader"
 					onclick="">
-				<div class="row">
-					<div class="col m2  offset-m1"><a class="labels blue waves-effect waves-light btn"
+
+					<!--Dropdown list for fonts-->
+					<ul id = "dropdown-font" class = "dropdown-content">  
+						<li><a href = "#">Tarale</a></li>  
+						<li><a href = "#">Liu Jian Mao Cao</a></li>  
+						<li><a href = "#">Caveat</a></li>  
+						<li><a href = "#">Homemade Apple</a></li>  
+						<li><a href = "#">Dewebeauty Demo</a></li>  
+						<li><a href = "#">Antro Vectra</a></li>  
+						<li><a href = "#">Muiden Castle Script</a></li>  
+				 </ul> 
+				
+
+				 <div class="row edit-pages">
+					 <div class="col flow-text" >
+						<a class="labels blue waves-effect waves-light btn" 
+						id="btnPageUpload">Upload Page</a>
+					 </div>
+					 <div class="col">
+						<a class="labels blue waves-effect waves-light btn " onclick="changePage()">Switch
+							Page</a>
+					 </div>
+					 <div class="col flow-text" >
+						<a class="labels blue waves-effect waves-light btn" 
+						id="btnPageUpload">Upload Page</a>
+					 </div>
+					 <div class="col">
+						<a class="labels blue waves-effect waves-light btn " onclick="changePage()">Switch
+							Page</a>
+					 </div>
+					 <div class="col"><a class = "btn dropdown-button labels blue waves-effect waves-light" href = "#" data-activates = "dropdown-font" >Switch Font 
+						<i class = "mdi-navigation-arrow-drop-down right"></i></a></div>  
+					 
+				 </div>
+
+				<div class="row edit-pages">
+					<div class="col m3"><a class="labels blue waves-effect waves-light btn"
 							id="btnPageUpload">Upload Page</a></div>
-					<div class="col m2"><a class="labels blue waves-effect waves-light btn" onclick="changePage()">Switch
+					<div class="col m3"><a class="labels blue waves-effect waves-light btn " onclick="changePage()">Switch
 							Page</a></div>
-					<div class="col m2"><a class="labels blue waves-effect waves-light btn"
+					<!-- <div class="col m2"><a class="labels blue waves-effect waves-light btn"
 							onclick="changeFont()">Switch Font</a></div>
-					<div class="col m2 offset-s1"><a class="labels blue waves-effect waves-light btn" id="btnFontUpload"
+					 -->
+						 
+							 
+						 <div class="col m3"><a class = "btn dropdown-button labels blue waves-effect waves-light" href = "#" data-activates = "dropdown-font" >Switch Font 
+								<i class = "mdi-navigation-arrow-drop-down right"></i></a></div>      
+
+
+
+					<div class="col m3 offset-s1"><a class="labels blue waves-effect waves-light btn" id="btnFontUpload" 
 							onclick="uploadFont()">Upload Your Font</a></div>
-					<div class="col m2"><a class="labels blue waves-effect waves-light btn"
+					<div class="col m3"><a class="labels blue waves-effect waves-light btn"
 							onclick="save(str(pageNum++))">Download Page</a></div>
 				</div>
 				<div class="row center ">
